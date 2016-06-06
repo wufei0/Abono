@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F5EF7C1-5050-4F3C-9869-CE1F75F8992E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Abono.My.MyApplication</StartupObject>
+    <RootNamespace>Abono</RootNamespace>
+    <AssemblyName>Abono Document Tracking</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Abono Document Tracking.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Abono Document Tracking.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E35E96F88D01151C02D8E3B2AA7B60B5425D57DB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Abono_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=3.1.1.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\FirebirdClient\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.UnitTests">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\FirebirdClient\FirebirdSql.Data.UnitTests.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MonthCalendar">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\MonthCalendar_demo_vs2005\MonthCalendar.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Class\clsListviewSorter.vb" />
+    <Compile Include="Declarations\modDeclarations.vb" />
+    <Compile Include="Forms\Assistance\frmAssistance.Designer.vb">
+      <DependentUpon>frmAssistance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Assistance\frmAssistance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Directory\frmDirectory.Designer.vb">
+      <DependentUpon>frmDirectory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Directory\frmDirectory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Equipment and Infra\frmInfrastructure.Designer.vb">
+      <DependentUpon>frmInfrastructure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Equipment and Infra\frmInfrastructure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Equipment and Infra\frmRequest_Equipment_Input.Designer.vb">
+      <DependentUpon>frmRequest_Equipment_Input.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Equipment and Infra\frmRequest_Equipment_Input.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maintenance\frmAssistanceType.Designer.vb">
+      <DependentUpon>frmAssistanceType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Maintenance\frmAssistanceType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maintenance\frmDocumentType.Designer.vb">
+      <DependentUpon>frmDocumentType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Maintenance\frmDocumentType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maintenance\frmEquipment.Designer.vb">
+      <DependentUpon>frmEquipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Maintenance\frmEquipment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maintenance\frmAddress.Designer.vb">
+      <DependentUpon>frmAddress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Maintenance\frmAddress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Equipment and Infra\frmRequest_Equipment.Designer.vb">
+      <DependentUpon>frmRequest_Equipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Equipment and Infra\frmRequest_Equipment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maintenance\frmRecepient.Designer.vb">
+      <DependentUpon>frmRecepient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Maintenance\frmRecepient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSearch.Designer.vb">
+      <DependentUpon>frmSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MdiAbono.Designer.vb">
+      <DependentUpon>MdiAbono.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MdiAbono.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Scan\frmDocumentManager.Designer.vb">
+      <DependentUpon>frmDocumentManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Scan\frmDocumentManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Scan\frmPDFviewer.Designer.vb">
+      <DependentUpon>frmPDFviewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Scan\frmPDFviewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Scan\frmScanDialog.Designer.vb">
+      <DependentUpon>frmScanDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Scan\frmScanDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Scheduler\frmSchedule.Designer.vb">
+      <DependentUpon>frmSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Scheduler\frmSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Func_Forms.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Procedures\Proc_Button.vb" />
+    <Compile Include="Procedures\Proc_ListView.vb" />
+    <Compile Include="Procedures\Proc_TextBox.vb" />
+    <Compile Include="Reports\Crystal Files\Assistance.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Assistance.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form Viewer\frmAssistanceRpt.Designer.vb">
+      <DependentUpon>frmAssistanceRpt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form Viewer\frmAssistanceRpt.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Assistance\frmAssistance.resx">
+      <DependentUpon>frmAssistance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Directory\frmDirectory.resx">
+      <DependentUpon>frmDirectory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Equipment and Infra\frmInfrastructure.resx">
+      <DependentUpon>frmInfrastructure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Equipment and Infra\frmRequest_Equipment_Input.resx">
+      <DependentUpon>frmRequest_Equipment_Input.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maintenance\frmAssistanceType.resx">
+      <DependentUpon>frmAssistanceType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maintenance\frmDocumentType.resx">
+      <DependentUpon>frmDocumentType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maintenance\frmEquipment.resx">
+      <DependentUpon>frmEquipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maintenance\frmAddress.resx">
+      <DependentUpon>frmAddress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Equipment and Infra\frmRequest_Equipment.resx">
+      <DependentUpon>frmRequest_Equipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maintenance\frmRecepient.resx">
+      <DependentUpon>frmRecepient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSearch.resx">
+      <DependentUpon>frmSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MdiAbono.resx">
+      <DependentUpon>MdiAbono.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Scan\frmDocumentManager.resx">
+      <DependentUpon>frmDocumentManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Scan\frmPDFviewer.resx">
+      <DependentUpon>frmPDFviewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Scan\frmScanDialog.resx">
+      <DependentUpon>frmScanDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Scheduler\frmSchedule.resx">
+      <DependentUpon>frmSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Crystal Files\Assistance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Assistance.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form Viewer\frmAssistanceRpt.resx">
+      <DependentUpon>frmAssistanceRpt.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Abono_TemporaryKey.pfx" />
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxDSOFramer">
+      <Guid>{00460180-9E5E-11D5-B7C8-B8269041DD57}</Guid>
+      <VersionMajor>11</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DSOFramer">
+      <Guid>{00460180-9E5E-11D5-B7C8-B8269041DD57}</Guid>
+      <VersionMajor>11</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abono1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="favicon1.ico" />
+    <None Include="Resources\main.jpg" />
+    <None Include="Resources\1379588580_exit.png" />
+    <None Include="Resources\1379588061_3floppy_unmount.png" />
+    <None Include="Resources\1379587929_building.png" />
+    <None Include="Resources\1379587600_Gas-pump.png" />
+    <None Include="Resources\1379587422_tests.png" />
+    <None Include="Resources\1379587254_27-Edit Text.png" />
+    <None Include="Resources\1379586766_Directory.png" />
+    <None Include="Resources\1379586678_BeOS_message.png" />
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
