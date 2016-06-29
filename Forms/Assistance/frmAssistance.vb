@@ -260,6 +260,13 @@ Public Class frmAssistance
 
         End Try
         'cboAssistanceType.TabIndex = 0
+        dtApproved.Format = DateTimePickerFormat.Custom
+        dtApproved.CustomFormat = "MM/dd/yyyy"
+        dtReceived.Format = DateTimePickerFormat.Custom
+        dtReceived.CustomFormat = "MM/dd/yyyy"
+        dtReleased.Format = DateTimePickerFormat.Custom
+        dtReleased.CustomFormat = "MM/dd/yyyy"
+
 
         Me.MdiParent = MdiAbono
         Call Proc_Button_Delete(Me.Name)

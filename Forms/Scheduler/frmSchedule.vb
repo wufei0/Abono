@@ -8,6 +8,9 @@ Public Class frmSchedule
         Call Proc_Button_Delete(Me.Name)
         Call Proc_Textbox_Delete(Me.Name)
 
+        dtDate.Format = DateTimePickerFormat.Custom
+        dtDate.CustomFormat = "MM/dd/yyyy"
+    
 
         'Dim todaydate As Date = "10 / 10 / 2013"
         'Dim dateitem1 As DateItem

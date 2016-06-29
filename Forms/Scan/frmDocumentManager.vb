@@ -178,6 +178,12 @@ Public Class frmDocumentManager
             End Try
         End Try
 
+        dtDate.Format = DateTimePickerFormat.Custom
+        dtDate.CustomFormat = "MM/dd/yyyy"
+
+
+
+
         Me.MdiParent = MdiAbono
         Call Proc_Button_Delete(Me.Name)
         Call Proc_Textbox_Delete(Me.Name)
@@ -454,6 +460,10 @@ Public Class frmDocumentManager
     End Sub
 
     Private Sub txtSearch_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtSearch.TextChanged
+
+    End Sub
+
+    Private Sub grpDocManager_Enter(sender As System.Object, e As System.EventArgs) Handles grpDocManager.Enter
 
     End Sub
 End Class

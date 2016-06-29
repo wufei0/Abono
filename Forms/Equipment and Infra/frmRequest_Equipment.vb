@@ -14,6 +14,11 @@ Public Class frmRequest_Equipment
         'radRecepient.Checked = True
         Me.Width = 821
 
+        dtApproved.Format = DateTimePickerFormat.Custom
+        dtApproved.CustomFormat = "MM/dd/yyyy"
+        dtReceived.Format = DateTimePickerFormat.Custom
+        dtReceived.CustomFormat = "MM/dd/yyyy"
+
         Me.Cursor = Cursors.Default
 
     End Sub

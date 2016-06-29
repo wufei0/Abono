@@ -27,6 +27,7 @@ Partial Class frmAssistance
         Me.btnClose = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblRecordFound = New System.Windows.Forms.Label()
         Me.lstAssistance = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -77,7 +78,6 @@ Partial Class frmAssistance
         Me.Label3 = New System.Windows.Forms.Label()
         Me.lblAssistance_ID = New System.Windows.Forms.Label()
         Me.lblID = New System.Windows.Forms.Label()
-        Me.lblRecordFound = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GrpAssistance.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
@@ -135,6 +135,14 @@ Partial Class frmAssistance
         Me.GroupBox1.TabIndex = 19
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Search"
+        '
+        'lblRecordFound
+        '
+        Me.lblRecordFound.AutoSize = True
+        Me.lblRecordFound.Location = New System.Drawing.Point(6, 482)
+        Me.lblRecordFound.Name = "lblRecordFound"
+        Me.lblRecordFound.Size = New System.Drawing.Size(0, 13)
+        Me.lblRecordFound.TabIndex = 21
         '
         'lstAssistance
         '
@@ -378,7 +386,7 @@ Partial Class frmAssistance
         Me.chkApproved.AutoSize = True
         Me.chkApproved.Location = New System.Drawing.Point(187, 13)
         Me.chkApproved.Name = "chkApproved"
-        Me.chkApproved.Size = New System.Drawing.Size(72, 17)
+        Me.chkApproved.Size = New System.Drawing.Size(71, 17)
         Me.chkApproved.TabIndex = 4
         Me.chkApproved.Text = "Approved"
         Me.chkApproved.UseVisualStyleBackColor = True
@@ -391,7 +399,7 @@ Partial Class frmAssistance
         Me.chkReceived.Enabled = False
         Me.chkReceived.Location = New System.Drawing.Point(17, 14)
         Me.chkReceived.Name = "chkReceived"
-        Me.chkReceived.Size = New System.Drawing.Size(72, 17)
+        Me.chkReceived.Size = New System.Drawing.Size(69, 17)
         Me.chkReceived.TabIndex = 1
         Me.chkReceived.Text = "Received"
         Me.chkReceived.UseVisualStyleBackColor = True
@@ -401,7 +409,7 @@ Partial Class frmAssistance
         Me.chkReleased.AutoSize = True
         Me.chkReleased.Location = New System.Drawing.Point(17, 82)
         Me.chkReleased.Name = "chkReleased"
-        Me.chkReleased.Size = New System.Drawing.Size(71, 17)
+        Me.chkReleased.Size = New System.Drawing.Size(70, 17)
         Me.chkReleased.TabIndex = 4
         Me.chkReleased.Text = "Released"
         Me.chkReleased.UseVisualStyleBackColor = True
@@ -566,14 +574,6 @@ Partial Class frmAssistance
         Me.lblID.Text = "ID"
         Me.lblID.Visible = False
         '
-        'lblRecordFound
-        '
-        Me.lblRecordFound.AutoSize = True
-        Me.lblRecordFound.Location = New System.Drawing.Point(6, 482)
-        Me.lblRecordFound.Name = "lblRecordFound"
-        Me.lblRecordFound.Size = New System.Drawing.Size(0, 13)
-        Me.lblRecordFound.TabIndex = 21
-        '
         'frmAssistance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -587,6 +587,7 @@ Partial Class frmAssistance
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.lblID)
         Me.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MaximizeBox = False
         Me.Name = "frmAssistance"
         Me.Text = "Assistance"
         Me.GroupBox1.ResumeLayout(False)

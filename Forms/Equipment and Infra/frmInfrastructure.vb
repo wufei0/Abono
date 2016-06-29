@@ -9,6 +9,12 @@ Public Class frmInfrastructure
         Call Proc_Textbox_Delete(Me.Name)
         'Call Proc_listview_Refresh(Me.Name, "SELECT * FROM INFRA_REQUEST JOIN MUNICIPALITY ON INFRA_REQUEST.MUNICIPALITY_ID = MUNICIPALITY.MUNICIPALITY_ID JOIN RECEPIENT ON INFRA_REQUEST.RECEPIENT_ID = RECEPIENT.RECEPIENT_ID")
         Me.Width = 803
+
+        dtApproved.Format = DateTimePickerFormat.Custom
+        dtApproved.CustomFormat = "MM/dd/yyyy"
+        dtReceived.Format = DateTimePickerFormat.Custom
+        dtReceived.CustomFormat = "MM/dd/yyyy"
+
         Me.Cursor = Cursors.Default
     End Sub
 

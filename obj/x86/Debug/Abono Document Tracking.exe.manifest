@@ -4,7 +4,7 @@
   <description asmv2:iconFile="favicon1.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Abono Document Tracking" version="2.5.5.0" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="Abono Document Tracking" version="2.5.7.0" language="neutral" processorArchitecture="x86" />
     <commandLine file="Abono Document Tracking.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -63,14 +63,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Abono Document Tracking.exe" size="718336">
-      <assemblyIdentity name="Abono Document Tracking" version="2.5.5.0" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Abono Document Tracking.exe" size="718848">
+      <assemblyIdentity name="Abono Document Tracking" version="2.5.7.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>9rHCp8UZCFR2oyoYKaLKFHdK1LA=</dsig:DigestValue>
+        <dsig:DigestValue>da2Vt+0tTN7Xm3tABZPyzRqQ41k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

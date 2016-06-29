@@ -7,6 +7,12 @@
     Private Sub frmRequest_Equipment_Input_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'Me.MdiParent = MdiAbono
         '
+
+        dtDate.Format = DateTimePickerFormat.Custom
+        dtDate.CustomFormat = "MM/dd/yyyy"
+   
+
+
     End Sub
 
 

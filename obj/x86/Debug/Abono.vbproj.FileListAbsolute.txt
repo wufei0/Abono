@@ -72,3 +72,4 @@ D:\OneDrive\Projects\ABONO\System and DB\Abono\obj\x86\Debug\Abono Document Trac
 D:\OneDrive\Projects\ABONO\System and DB\Abono\obj\x86\Debug\Abono Document Tracking.exe
 D:\OneDrive\Projects\ABONO\System and DB\Abono\obj\x86\Debug\Abono Document Tracking.xml
 D:\OneDrive\Projects\ABONO\System and DB\Abono\obj\x86\Debug\Abono Document Tracking.pdb
+D:\OneDrive\Projects\ABONO\System and DB\Abono\obj\x86\Debug\Abono.vbprojResolveAssemblyReference.cache
